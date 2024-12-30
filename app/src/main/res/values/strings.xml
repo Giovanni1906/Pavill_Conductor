@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Pavill</string>
+    <string name="btn_register">Crear Cuenta</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="welcome_message">Bienvenido</string>
+    <string name="login_button_text">Iniciar sesión</string>
+<!--    original-->
+<!--    <string name="map_api_key">AIzaSyC4iDomCckoxS2oAudRO8JumfRMNINuV8A</string>-->
+<!--    pruebas-->
+    <string name="map_api_key">AIzaSyCiO3MUfI0sejMPz0v0IowvKmnc3706iJs</string>
+
+    <string name="url_services">http://rtpavillv2.ddns.net:8014/apptaxipavillv3/webservice/JnCliente.php</string>
+    <string name="url_services_conductor">http://rtpavillv2.ddns.net:8014/apptaxipavillv3/webservice/JnConductor.php</string>
+    <string name="url_services_pedido">http://rtpavillv2.ddns.net:8014/apptaxipavillv3/webservice/JnPedido.php</string>
+    <string name="url_services_ubicacion">http://rtpavillv2.ddns.net:8014/apptaxipavillv3/webservicem/JnConductorUbicacion.php</string>
+    <string name="url_services_mapa">http://rtpavillv2.ddns.net:8014/apptaxipavillv3/webservice/JnMapa.php</string>
+    <string name="url_services_fav">http://rtpavillv2.ddns.net:8014/apptaxipavillv3/webservice/JnClienteDestinoFavorito.php</string>
+
+<!--    versión de la aplicación-->
+    <string name="app_version_number">v.1.40.0</string>
+
+</resources>

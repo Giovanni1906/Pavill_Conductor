@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen de fondo" />
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="0dp">
+
+        <!-- Títulos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPavill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conductor Pavill"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <!-- Formulario -->
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Campo Correo -->
+            <LinearLayout
+                android:id="@+id/layoutEmail"
+                style="@style/GeneralLinearLayoutStylePrincipal"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    style="@style/GeneralImageViewStylePrincipal"
+                    android:contentDescription="Correo electrónico"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/TextEmail"
+                    style="@style/GeneralEditTextStylePrincipal"
+                    android:hint="Correo electrónico" />
+            </LinearLayout>
+
+            <!-- Campo Contraseña -->
+            <LinearLayout
+                android:id="@+id/layoutPassword"
+                style="@style/GeneralLinearLayoutStylePrincipal"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    style="@style/GeneralImageViewStylePrincipal"
+                    android:contentDescription="Contraseña"
+                    android:src="@drawable/ic_password" />
+
+                <EditText
+                    android:id="@+id/TextPassword"
+                    style="@style/GeneralEditTextStylePrincipal"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <!-- Botón para iniciar sesión -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                style="@style/Button.Form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_alternative"
+                android:text="Iniciar sesión" />
+        </LinearLayout>
+
+        <!-- Copyright -->
+        <TextView
+            android:id="@+id/textViewCopyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="© Pavill 2024"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
